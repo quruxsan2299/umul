@@ -1,0 +1,203 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;  /* Background light grey */
+    color: #333; /* Text color dark grey */
+}
+{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.image-container {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 300px;
+    background-color: #14c1a4;
+    border: 1px solid #0fbaac;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    left: 200px;
+}
+
+.responsive-image {
+    max-width: 500px;
+    height: 500px;
+    border-radius: 3px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.responsive-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header */
+header {
+    background-color: #333; /* Dark background for header */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    color: #ff6347; /* Tomato color for title */
+}
+
+header p {
+    font-size: 1.5em;
+    color: #fff; /* White text */
+}
+
+/* About Me Section */
+#about {
+    background-color: #fff; /* White background */
+    padding: 50px 0;
+    text-align: center;
+    color: #333; /* Dark text for readability */
+}
+
+#about h2 {
+    color: #ff6347; /* Tomato color for section title */
+}
+
+#about img {
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 5px solid #ff6347; /* Border around image */
+}
+
+/* Projects Section */
+#projects {
+    background-color: #f9f9f9; /* Light grey background for project section */
+    padding: 50px 0;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #ff6347; /* Tomato color */
+    margin-bottom: 30px;
+}
+
+.project {
+    background-color: #fff; /* White background for each project */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #333; /* Dark text */
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff6347; /* Tomato color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    color: #d54e21; /* Darker tomato on hover */
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff; /* White background */
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #ff6347; /* Tomato color for contact title */
+}
+
+#contact a {
+    color: #007bff; /* Blue color for email links */
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #0056b3; /* Darker blue when hovering over the link */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark background for footer */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #bbb; /* Light grey text */
+}
+
+/* Button Style */
+button {
+    background-color: #ff6347; /* Tomato color for buttons */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d54e21; /* Darker tomato color when hovering */
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em; /* Adjust font size for smaller screens */
+    }
+
+    header p {
+        font-size: 1.2em; /* Adjust paragraph size */
+    }
+
+    #about img {
+        width: 150px; /* Adjust image size for smaller screens */
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .project {
+        margin: 10px 0;
+    }
+}
